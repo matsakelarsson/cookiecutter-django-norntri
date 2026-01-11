@@ -9,13 +9,9 @@
 [![Join our Discord](https://img.shields.io/badge/Discord-cookiecutter-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/rAWFUP47d2)
 [![Code Helpers Badge](https://www.codetriage.com/cookiecutter/cookiecutter-django/badges/users.svg)](https://www.codetriage.com/cookiecutter/cookiecutter-django)
 
-Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter), Cookiecutter Django is a framework for jumpstarting
+Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter-django), Cookiecutter Django Norntri is a slimmed down version for building
 production-ready Django projects quickly.
 
-- Documentation: <https://cookiecutter-django.readthedocs.io/en/latest/>
-- See [Troubleshooting](https://cookiecutter-django.readthedocs.io/en/latest/5-help/troubleshooting.html) for common errors and obstacles
-- If you have problems with Cookiecutter Django, please open [issues](https://github.com/cookiecutter/cookiecutter-django/issues/new) don't send
-  emails to the maintainers.
 
 ## Features
 
@@ -54,28 +50,6 @@ _These features can be enabled during initial project setup._
 - Uses PostgreSQL everywhere: 14 - 18 ([MySQL fork](https://github.com/mabdullahadeel/cookiecutter-django-mysql) also available).
 - Environment variables for configuration (This won't work with Apache/mod_wsgi).
 
-## Support this Project!
-
-This project is an open source project run by volunteers. You can sponsor us via [OpenCollective](https://opencollective.com/cookiecutter-django) or individually via GitHub Sponsors:
-
-- Daniel Roy Greenfeld, Project Lead ([GitHub](https://github.com/pydanny), [Patreon](https://www.patreon.com/danielroygreenfeld)): expertise in Django and AWS ELB.
-- Fabio C. Barrionuevo, Core Developer ([GitHub](https://github.com/luzfcb)): expertise in Python/Django, hands-on DevOps and frontend experience.
-- Bruno Alla, Core Developer ([GitHub](https://github.com/browniebroke)): expertise in Python/Django and DevOps.
-- Nikita Shupeyko, Core Developer ([GitHub](https://github.com/webyneter)): expertise in Python/Django, hands-on DevOps and frontend experience.
-
-Projects that provide financial support to the maintainers:
-
-### Two Scoops of Django
-
-[![Cover of the book "Two Scoops of Django 3.x"](https://f004.backblazeb2.com/file/feldroycom/images/book-TSD3-800.jpg)](https://www.feldroy.com/two-scoops-of-django)
-
-Two Scoops of Django 3.x is the best ice cream-themed Django reference in the universe!
-
-### PyUp
-
-[![PyUp Logo](https://pyup.io/static/images/logo.png)](https://pyup.io)
-
-PyUp brings you automated security and dependency updates used by Google and other organizations. Free for open source projects!
 
 ## Usage
 
@@ -115,19 +89,19 @@ Answer the prompts with your own desired [options](http://cookiecutter-django.re
     3 - GPLv3
     4 - Apache Software License 2.0
     5 - Not open source
-    Choose from 1, 2, 3, 4, 5 [1]: 1
+    Choose from 1, 2, 3, 4, 5 [1]: 5
     Select username_type:
     1 - username
     2 - email
-    Choose from 1, 2 [1]: 1
-    timezone [UTC]: America/Los_Angeles
+    Choose from 1, 2 [1]: 2
+    timezone [UTC]: Europe/Stockholm
     windows [n]: n
     Select an editor to use. The choices are:
     1 - None
     2 - PyCharm
     3 - VS Code
-    Choose from 1, 2, 3 [1]: 1
-    use_docker [n]: n
+    Choose from 1, 2, 3 [1]: 3
+    use_docker [n]: y
     Select postgresql_version:
     1 - 18
     2 - 17
@@ -150,7 +124,7 @@ Answer the prompts with your own desired [options](http://cookiecutter-django.re
     7 - Brevo (formerly SendinBlue)
     8 - SparkPost
     9 - Other SMTP
-    Choose from 1, 2, 3, 4, 5, 6, 7, 8, 9 [1]: 1
+    Choose from 1, 2, 3, 4, 5, 6, 7, 8, 9 [1]: 5
     use_async [n]: n
     use_drf [n]: y
     Select frontend_pipeline:
@@ -160,18 +134,18 @@ Answer the prompts with your own desired [options](http://cookiecutter-django.re
     4 - Webpack
     Choose from 1, 2, 3, 4 [1]: 1
     use_celery [n]: y
-    use_mailpit [n]: n
+    use_mailpit [n]: y
     use_sentry [n]: y
-    use_whitenoise [n]: n
-    use_heroku [n]: y
+    use_whitenoise [n]: y
+    use_heroku [n]: n
     Select ci_tool:
     1 - None
     2 - Travis
     3 - Gitlab
     4 - Github
     Choose from 1, 2, 3, 4 [1]: 4
-    keep_local_envs_in_vcs [y]: y
-    debug [n]: n
+    keep_local_envs_in_vcs [y]: n
+    debug [n]: y
 
 Enter the project and take a look around:
 
@@ -192,31 +166,6 @@ For local development, see the following:
 
 - [Developing locally](https://cookiecutter-django.readthedocs.io/en/latest/2-local-development/developing-locally.html)
 - [Developing locally using docker](https://cookiecutter-django.readthedocs.io/en/latest/2-local-development/developing-locally-docker.html)
-
-## Community
-
-- Have questions? **Before you ask questions anywhere else**, please post your question on [Stack Overflow](http://stackoverflow.com/questions/tagged/cookiecutter-django) under the _cookiecutter-django_ tag. We check there periodically for questions.
-- If you think you found a bug or want to request a feature, please open an [issue](https://github.com/cookiecutter/cookiecutter-django/issues).
-- For anything else, you can chat with us on [Discord](https://discord.gg/uFXweDQc5a).
-
-<img src="https://opencollective.com/cookiecutter-django/contributors.svg?width=890&button=false" alt="Contributors">
-
-## For Readers of Two Scoops of Django
-
-You may notice that some elements of this project do not exactly match what we describe in chapter 3. The reason for that is this project, amongst other things, serves as a test bed for trying out new ideas and concepts. Sometimes they work, sometimes they don't, but the end result is that it won't necessarily match precisely what is described in the book I co-authored.
-
-## For PyUp Users
-
-If you are using [PyUp](https://pyup.io) to keep your dependencies updated and secure, use the code _cookiecutter_ during checkout to get 15% off every month.
-
-## "Your Stuff"
-
-Scattered throughout the Python and HTML of this project are places marked with "your stuff". This is where third-party libraries are to be integrated with your project.
-
-## For MySQL users
-
-To get full MySQL support in addition to the default Postgresql, you can use this fork of the cookiecutter-django:
-https://github.com/mabdullahadeel/cookiecutter-django-mysql
 
 ## Releases
 
